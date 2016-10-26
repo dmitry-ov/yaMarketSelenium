@@ -145,6 +145,7 @@ public class Market {
             }
         }
 
+        // оставить только 3 элемента в списке для вывода
         while (result.size() > 3) {
             Random rand = new Random();
             int n = rand.nextInt(result.size());
