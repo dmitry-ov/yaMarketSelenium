@@ -157,9 +157,9 @@ public class Market {
 
     }
 
-    private void checkSelected(String itemSmartphone) {
-        assertEquals(driver.findElementsByXPath(itemSmartphone + "/parent::*").size(), 1);
-        assertTrue(driver.findElementsByXPath(itemSmartphone + "/parent::*").get(0).
+    private void checkSelected(String queryCheckbox) {
+        assertEquals(driver.findElementsByXPath(queryCheckbox + "/parent::*").size(), 1);
+        assertTrue(driver.findElementsByXPath(queryCheckbox + "/parent::*").get(0).
                 getAttribute("class").contains("checkbox_checked_yes"));
     }
 
